@@ -1,7 +1,18 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
   <Solutions>
-    <Solution Assembly="X1bplan.PluginTesting.X1bplan.PluginTesting.Plugins.dll" Id="00000000-0000-0000-0000-000000000000" IsolationMode="Sandbox" SourceType="Database" />
+    <Solution Assembly="X1bplan.PluginTesting.X1bplan.PluginTesting.Plugins.dll" Id="cfe904ed-9f76-e211-a0eb-000c29de4d6f" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <Plugin Description="Plug-in to PreValidateContactDelete" FriendlyName="PreValidateContactDelete" Name="X1bplan.PluginTesting.X1bplan.PluginTesting.Plugins.PreValidateContactDelete" Id="d2e904ed-9f76-e211-a0eb-000c29de4d6f" TypeName="X1bplan.PluginTesting.X1bplan.PluginTesting.Plugins.PreValidateContactDelete">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PreValidateContactDelete" Description="Pre-Validation of Contact Delete" Id="d3e904ed-9f76-e211-a0eb-000c29de4d6f" MessageName="Delete" Mode="Synchronous" PrimaryEntityName="contact" Rank="1" SecureConfiguration="" Stage="PreOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
   </Solutions>
   <XamlWorkflows />
 </Register>
